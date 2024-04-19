@@ -1,0 +1,16 @@
+{
+    "name": "bartek",
+    "version": "1.0.0",
+    "description": "Simple website, where user can create his own bingo, save it, share it with friends, and then play it together!",
+    "main": "script.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "node script.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.19.2"
+    }
+}
