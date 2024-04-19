@@ -6,7 +6,7 @@
     <title>Twoje Bingo</title>
     <link rel="stylesheet" href="styleBingo.css">
     <script src="bingoJs.js" defer></script>
-    <script src="script.js" defer></script>
+    <script src="../script.js" defer></script>
 
 </head>
 <body>
