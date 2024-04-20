@@ -2,6 +2,11 @@
     "version": 2,
     "name": "swingo",
     "builds": [
-        { "src": "api/*.js", "use": "@vercel/node" }
+        { "src": "api/server.js", "use": "@vercel/node" },
+        { "src": "index.html", "use": "@vercel/static" }
+    ],
+    "rewrites": [
+        { "source": "/api/(.*)", "destination": "/api/server.js" },
+        { "source": "/(.*)", "destination": "/index.html" }
     ]
 }
