@@ -2,9 +2,6 @@
     "version": 2,
     "name": "swingo",
     "builds": [
-        { "src": "api/server.js", "use": "@vercel/node-server" }
-    ],
-    "routes": [
-        { "src": "/(.*)", "dest": "/$1" }
+        { "src": "api/*.js", "use": "@vercel/node" }
     ]
 }
