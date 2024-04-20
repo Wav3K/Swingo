@@ -4,18 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bingo</title>
-    <script src="script.js" defer></script>
-    <script src="bingoJs.js" defer></script>
+    <script src="../script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <div style="display: flex;">
-    <!--
-    <nav>
-        <button onclick="location.href = './indexDaily.html'">Daily</button>
-        <button onclick="location.href = './indexDaily.html'">Weekly</button>
-        <button onclick="location.href = './indexDaily.html'">Monthly</button>
-    </nav>
-     -->
      <div class="flex-container">
         <div>
             <h2>Wybierz rozmiar binga:</h2>
@@ -34,11 +26,11 @@
             <button onclick="downloadPreset()">Download Preset</button>
         </div>
     </div>
-    <form action="api/bingo.php" method="post" >
+    <form action="/api/bingo" method="post">
         <h2>Podaj wartości dla okienek Binga:</h2>
         <div name="inputs">
         </div>
-        <button id="submitBtn" type="submit" disabled >Stwórz Bingo</button>
+        <button id="submitBtn" type="submit">Stwórz Bingo</button>
     </form>
 </body>
 </html>

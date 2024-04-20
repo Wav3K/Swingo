@@ -37,6 +37,11 @@ td {
     line-height: 1; /* Adjust this to change the cell height */
 }
 
+table td {
+    width: 20%; /* Adjust this value as needed */
+    padding-top: 20%; /* This should be the same as the width */
+    position: relative;
+}
 #resultBingo {
     font-size: 2em;
     text-align: center;

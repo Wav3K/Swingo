@@ -16,7 +16,6 @@ function createTable(size) {
     }
 }
 createTable(size);
-
 associatedTab.forEach((value, i) => {
     const cell = document.getElementById(i + 1);
     cell.innerHTML = value;
@@ -40,6 +39,6 @@ function checkBingo(size) {
     if (isRowBingo || isColumnBingo || isDiagonalBingo) {
         resultBingo.textContent = 'Bingo!!!';
     } else {
-        resultBingo.textContent = ''; // Clear the 'Bingo' text if no bingo
+        resultBingo.textContent = ''; 
     }
 }
