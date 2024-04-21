@@ -25,12 +25,14 @@
             <input type="file" id="uploadPreset" onchange="uploadPreset(event)">
             <button onclick="downloadPreset()">Download Preset</button>
         </div>
-    </div>
-    <form action="/api/bingo" method="post">
-        <h2>Podaj wartości dla okienek Binga:</h2>
-        <div name="inputs">
+        <div>
+            <form action="/api/bingo" method="post">
+                <h2>Podaj wartości dla okienek Binga:</h2>
+                <div name="inputs">
+                </div>
+                <button id="submitBtn" type="submit">Stwórz Bingo</button>
+            </form>
         </div>
-        <button id="submitBtn" type="submit">Stwórz Bingo</button>
-    </form>
+    </div>
 </body>
 </html>

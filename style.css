@@ -2,11 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
 }
 
 .flex-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px;
 }
@@ -15,46 +17,71 @@ body {
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #333;
+    flex: 1 0 200px;
+    margin: 10px;
 }
 
 h2 {
-    color: #333;
+    color: #f4f4f4;
+}
+
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table {
+    width: 90vmin;
+    height: 90vmin;
+    table-layout: fixed;
+}
+
+table td {
+    width: 1fr;
+    padding: 5px; /* Decrease padding */
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #333;
+    color: #f4f4f4;
+    white-space: pre-wrap; /* Wrap text to next line */
+    word-break: break-word; /* Break words if necessary */
+    line-height: 1; /* Control line height */
+    font-size: 0.8em; /* Decrease font size if necessary */
+}
+
+input, button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #555;
+    color: #f4f4f4;
+}
+
+input {
+    width: 100%;
 }
 
 button {
-    display: block;
-    margin: 10px auto; /* Changed from 10px 0 to 10px auto */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #00ba70;
-    color: #fff;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #009a15;
+    background-color: #777;
 }
 
-input, select {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-select {
-    width: 100%;
-}
-form {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
+.flex-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .flex-container {
         flex-direction: column;
     }
