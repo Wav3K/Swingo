@@ -1,8 +1,0 @@
-{
-    "version": 2,
-    "name": "swingo",
-    "rewrites": [
-        { "source": "/api/(.*)", "destination": "/api/server.js" },
-        { "source": "/(.*)", "destination": "/index.html" }
-    ]
-}
