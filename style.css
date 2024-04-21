@@ -82,6 +82,16 @@ button:hover {
     align-items: center;
 }
 
+#resultBingo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: #f4f4f4;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
 @media (max-width: 600px) {
     .flex-container {
         flex-direction: column;
