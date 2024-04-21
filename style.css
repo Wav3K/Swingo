@@ -50,6 +50,7 @@ table td {
     word-break: break-word; /* Break words if necessary */
     line-height: 1; /* Control line height */
     font-size: 0.8em; /* Decrease font size if necessary */
+    box-sizing:border-box; /* Include padding and border in element's total width and height */
 }
 
 input, button {
