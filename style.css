@@ -34,8 +34,8 @@ h2 {
 }
 
 table {
-    width: 90vmin;
-    height: 90vmin;
+   /* width: 90vmin;
+    height: 90vmin; */
     table-layout: fixed;
 }
 
