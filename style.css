@@ -40,8 +40,8 @@ table {
 }
 
 table td {
-    width: 12vw;
-    height: 12vw; /* Adjust this value as needed */
+    width: 15.5vw;
+    height: 15.5vw; /* Adjust this value as needed */
     padding: 5px;
     border: 1px solid #ddd;
     text-align: center;
