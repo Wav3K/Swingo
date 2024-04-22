@@ -2,6 +2,15 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 
+function shuffleArray(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+  }
+}
+
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -27,6 +36,7 @@ app.post('/api/bingo', (req, res) => {
     for(let i = 1; i <= size * size; i++){
       bingoArray[i - 1] = req.body['input' + i];
     }
+    shuffleArray(bingoArray);
     const bingoNumbersJSON = JSON.stringify(bingoArray);
 
     let tableHTML = '<table>';

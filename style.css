@@ -37,11 +37,11 @@ table {
    /* width: 90vmin;
     height: 90vmin; */
     table-layout: fixed;
+    width: 47.5%;
+    aspect-ratio: 1/1;
 }
 
 table td {
-    width: 100%;
-    aspect-ratio: 1/1;
     padding: 5px;
     border: 1px solid #ddd;
     text-align: center;
