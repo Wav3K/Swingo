@@ -40,17 +40,18 @@ table {
 }
 
 table td {
-    width: 1fr;
-    padding: 5px; /* Decrease padding */
+    width: 12vw;
+    height: 12vw; /* Adjust this value as needed */
+    padding: 5px;
     border: 1px solid #ddd;
     text-align: center;
     background-color: #333;
     color: #f4f4f4;
-    white-space: pre-wrap; /* Wrap text to next line */
-    word-break: break-word; /* Break words if necessary */
-    line-height: 1; /* Control line height */
-    font-size: 0.8em; /* Decrease font size if necessary */
-    box-sizing:border-box; /* Include padding and border in element's total width and height */
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1;
+    font-size: 0.8em;
+    box-sizing: border-box;
 }
 
 input, button {
