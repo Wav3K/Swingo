@@ -11,6 +11,25 @@ function shuffleArray(array) {
   }
 }
 
+const pgp = require('pg-promise')()
+const db = pgp('postgres://swingoadmin:FcGCCrK8W4cV5GEgbC7NDaYCVoLz9aPT@dpg-coj3o4ol5elc73dh407g-a.frankfurt-postgres.render.com/swingo')
+/*
+db.one('SELECT * AS value', 123)
+  .then((data) => {
+    console.log('DATA:', data.value)
+  })
+  .catch((error) => {
+    console.log('ERROR:', error)
+  })
+  */
+
+db.connect()
+.then((obj) => {
+  obj.done(); // success, release the connection...
+})
+.catch((error) => {
+console.log('ERROR:', error.message || error);
+});
 const app = express();
 
 app.set('view engine', 'ejs');

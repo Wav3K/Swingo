@@ -14,7 +14,10 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "ejs": "^3.1.10",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0",
+    "pg-promise": "^11.6.0",
+    "psql": "^0.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
