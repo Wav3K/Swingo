@@ -40,8 +40,8 @@ table {
 }
 
 table td {
-    width: 15.5vw;
-    height: 15.5vw; /* Adjust this value as needed */
+    width: 100%;
+    aspect-ratio: 1/1;
     padding: 5px;
     border: 1px solid #ddd;
     text-align: center;
